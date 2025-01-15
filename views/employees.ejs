@@ -19,6 +19,7 @@
                     <th>Salary</th>
                     <th>Role</th>
                     <th>Employee Number</th>
+                    <th></th>
                  
                 </tr>
             </thead>
@@ -30,7 +31,7 @@
                         <td><%= employee.salary %></td>
                         <td><%= employee.role %></td>
                         <td><%= employee.employeeNumber %></td>
-                      
+                        <td><a href="/employees/<%= employee.id %>">View</a></td>
                     </tr>
                 <% }); %>
             </tbody>
