@@ -21,6 +21,12 @@ class EmployeeService {
     getAllEmployees() {
         return this.readEmployees();
     }
+
+    // Get a employee by ID
+    getEmployeeById(id) {
+        const employee = this.readEmployees();
+        return employee.find(employee => employee.id === id);
+    }
 }
 
 module.exports = EmployeeService;
