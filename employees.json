@@ -1,0 +1,10 @@
+[
+    {
+      "id": 1,
+      "name": "Shaun",
+      "email": "shaun@test.com",
+      "salary": 500000,
+      "role": "Software Engineer",
+      "employeeNumber": "EZ01"
+    }
+  ]
