@@ -36,6 +36,10 @@ main {
   padding-top: 5em;
 }
 
+table {
+  margin: auto;
+}
+
 nav {
   padding-top: 0.5em;
 }
