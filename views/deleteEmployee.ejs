@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information</title>
+    <title>Delete Employee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Employee Information</h1>
-
+    <h1>Delete User</h1>
     <% if (employee) { %>
         <table>
             <thead>
@@ -19,7 +18,6 @@
                     <th>Salary</th>
                     <th>Role</th>
                     <th>Employee Number</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -29,14 +27,18 @@
                     <td><%= employee.salary %></td>
                     <td><%= employee.role %></td>
                     <td><%= employee.employeeNumber %></td>
-                    <td><a href="/employees/delete/<%= employee.id %>">Delete...</a></td>
                 </tr>
             </tbody>
         </table>
     <% } else { %>
         <p>No Employee found.</p>
     <% } %>
+    <form action="/employees/delete/<%= employee.id %>" method="post">
+        <h3>
+            Are you sure you want to delete <%= employee.name %>?
+        </h3>
 
-    
+        <input type="submit" value="Submit">
+    </form> 
 </body>
 </html>

@@ -8,19 +8,19 @@
     "employeeNumber": "EZ02"
   },
   {
-    "id": 3,
-    "name": "Petuna",
-    "email": "petunia@test.com",
-    "salary": 550000,
+    "id": 1,
+    "name": "Shaun",
+    "email": "shaun@test.com",
+    "salary": 500000,
     "role": "Software Engineer",
-    "employeeNumber": "EZ03"
+    "employeeNumber": "EZ01"
   },
   {
-    "id": 4,
-    "name": "Paulina",
-    "email": "paulina@test.com",
-    "salary": 230000,
+    "id": 1,
+    "name": "Shaun",
+    "email": "shaun@test.com",
+    "salary": 500000,
     "role": "Software Engineer",
-    "employeeNumber": "EZ04"
+    "employeeNumber": "EZ01"
   }
 ]
