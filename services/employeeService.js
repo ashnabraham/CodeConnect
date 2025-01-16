@@ -17,6 +17,15 @@ class EmployeeService {
             }
         }
 
+    // Helper function to write Employees to JSON file
+            writeEmployees(employees) {
+                try {
+                    fs.writeFileSync(this.filePath, JSON.stringify(employees, null, 2), 'utf8');
+                } catch (err) {
+                    console.error('Error writing employees:', err);
+                }
+            }
+
     // Get all Employees
     getAllEmployees() {
         return this.readEmployees();
@@ -26,6 +35,15 @@ class EmployeeService {
     getEmployeeById(id) {
         const employee = this.readEmployees();
         return employee.find(employee => employee.id === id);
+    }
+
+    // Create a new employee
+    createEmployee(newEmployee) {
+        const employees = this.readEmployees();
+        newEmployee.id = employees.length ? employees[employees.length - 1].id + 1 : 1;
+        employees.push(newEmployee);
+        this.writeEmployees(employees);
+        return newEmployee;
     }
 }
 

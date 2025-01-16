@@ -4,5 +4,23 @@
     "name": "Shaun",
     "email": "shaun@test.com",
     "role": "Software Engineer"
+  },
+  {
+    "name": "James",
+    "email": "james@test.com",
+    "role": "Marketing",
+    "id": 2
+  },
+  {
+    "name": "Tina",
+    "email": "tina@test.com",
+    "role": "Finance",
+    "id": 3
+  },
+  {
+    "name": "Brian",
+    "email": "brian@test.com",
+    "role": "Finance",
+    "id": 4
   }
 ]
