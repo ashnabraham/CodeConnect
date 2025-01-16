@@ -11,7 +11,7 @@
     <h1>Edit Employee</h1>
 
     <% if (employee) { %>
-        <form action="/employees/<%= employee.id %>/edit" method="POST">
+        <form action="/users/update/<%= user.id %>" method="post">
             <table>
                 <tr>
                     <td>Name</td>
