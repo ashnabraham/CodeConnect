@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete User</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+  <header><img alt="logo" src="https://www.kainos.com/globalassets/images/5_logos/kainos_logo.png?mode=crop&width=400"
+      class="header__logo-img"></header>
+
     <h1>Delete User</h1>
 
+    <main>
     <form action="/users/delete/<%= user.id %>" method="post">
         <h3>
             Are you sure you want to delete <%= user.name %>?
         </h3>
 
         <input type="submit" value="Submit">
-    </form> 
+    </form>
+  </main>
 </body>
+
+<footer>Copyright © 2024 Kainos. Contact:
+  <address>support@kainospeoplesupport.com</address>
+</footer>
 </html>

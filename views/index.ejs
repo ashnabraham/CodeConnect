@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="icon" type="image/x-icon" href="https://companieslogo.com/img/orig/KNOS.L-8a0d29cc.png?t=1720244492">
+</head>
+
+<body>
+  <header><img alt="logo" src="https://www.kainos.com/globalassets/images/5_logos/kainos_logo.png?mode=crop&width=400"
+      class="header__logo-img"></header>
+      
+  <div id="page-title">
+    <h1>
+      <%= title %>
+    </h1>
+  </div>
+  <main>
     <p>Welcome to <%= title %></p>
-  </body>
+    <nav>
+    <p><a href="http://localhost:3000/employees">View employees</a></p>
+    </nav>
+  </main>
+</body>
+
+<footer>Copyright © 2024 Kainos. Contact:
+  <address>support@kainospeoplesupport.com</address>
+</footer>
 </html>

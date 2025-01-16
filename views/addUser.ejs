@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New User</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+  <header><img alt="logo" src="https://www.kainos.com/globalassets/images/5_logos/kainos_logo.png?mode=crop&width=400"
+      class="header__logo-img"></header>
+
     <h1>Add New User</h1>
 
+    <main>
     <form action="/users/add" method="post">
         <label for="name">Name:</label><br>
         <input type="name" id="name" name="name"><br>
@@ -21,6 +25,11 @@
         <input type="role" id="role" name="role"><br>
 
         <input type="submit" value="Submit">
-    </form> 
+    </form>
+  </main>
 </body>
+
+<footer>Copyright © 2024 Kainos. Contact:
+  <address>support@kainospeoplesupport.com</address>
+</footer>
 </html>
