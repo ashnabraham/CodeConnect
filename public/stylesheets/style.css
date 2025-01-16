@@ -1,8 +1,73 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  background-color: white;
+}
+
+.header__logo-img {
+  width: 100px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 180px;
+  float: left;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: 14px "Galano Grotesque", "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  padding-top: 8em;
+}
+
+main {
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 5em;
+}
+
+nav {
+  padding-top: 0.5em;
+}
+
+h1, .h1-article, h2, h3, h4, h5 {
+  letter-spacing: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+.footer-banner {
+  margin-top: auto;
+  background-color: #263057;
+  color: white;
+  font-weight: 300;
+  padding-top: 8em;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font: 14px "Galano Grotesque", "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  min-width: 100%;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+address {
+  display: inline;
 }

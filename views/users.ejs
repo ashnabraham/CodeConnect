@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+    <header><img alt="logo" src="https://www.kainos.com/globalassets/images/5_logos/kainos_logo.png?mode=crop&width=400"
+        class="header__logo-img"></header>
+        
+  <div class="page-title">
     <h1>User List</h1>
+    </div>
 
+    <main>
     <% if (users && users.length > 0) { %>
         <table>
             <thead>
@@ -42,5 +48,10 @@
     <form action="/users/add" method="get">
         <input type="submit" value="Create New User">
     </form> 
+</main>
 </body>
+
+<footer>Copyright © 2024 Kainos. Contact:
+  <address>support@kainospeoplesupport.com</address>
+</footer>
 </html>

@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <h1>User Information</h1>
+    <header><img alt="logo" src="https://www.kainos.com/globalassets/images/5_logos/kainos_logo.png?mode=crop&width=400"
+        class="header__logo-img"></header>
 
+        <div class="page-title">
+    <h1>User Information</h1>
+    </div>
+
+    <main>
     <% if (user) { %>
         <table>
             <thead>
@@ -31,6 +37,10 @@
         <p>No user found.</p>
     <% } %>
 
-    
+</main>
 </body>
+
+<footer>Copyright © 2024 Kainos. Contact:
+  <address>support@kainospeoplesupport.com</address>
+</footer>
 </html>
