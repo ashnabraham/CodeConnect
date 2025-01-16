@@ -8,29 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Employee Information</h1>
 
     <% if (employee) { %>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Salary</th>
-                    <th>Role</th>
-                    <th>Employee Number</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><%= employee.name %></td>
-                    <td><%= employee.email %></td>
-                    <td><%= employee.salary %></td>
-                    <td><%= employee.role %></td>
-                    <td><%= employee.employeeNumber %></td>
-                </tr>
-            </tbody>
-        </table>
+        <% if (editMode) { %>
+            <h1>Edit Employee</h1>
+            <form action="/employees/<%= employee.id %>/edit" method="POST">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" value="<%= employee.name %>"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" value="<%= employee.email %>"></td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td><input type="number" name="salary" value="<%= employee.salary %>"></td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td><input type="text" name="role" value="<%= employee.role %>"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Number</td>
+                        <td><input type="text" name="employeeNumber" value="<%= employee.employeeNumber %>" readonly></td>
+                    </tr>
+                </table>
+                <button type="submit">Save Changes</button>
+            </form>
+        <% } else { %>
+            <h1> Employee Information</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                        <th>Role</th>
+                        <th>Employee Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= employee.name %></td>
+                        <td><%= employee.email %></td>
+                        <td><%= employee.salary %></td>
+                        <td><%= employee.role %></td>
+                        <td><%= employee.employeeNumber %></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/employees/<%= employee.id %>/edit"><button>Edit</button></a>
+            <% } %>
     <% } else { %>
         <p>No Employee found.</p>
     <% } %>
