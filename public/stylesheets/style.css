@@ -22,9 +22,11 @@ body {
   text-align: center;
   font: 14px "Galano Grotesque", "Poppins", sans-serif;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-#page-title {
+.page-title {
   padding-top: 8em;
 }
 
@@ -35,7 +37,7 @@ main {
 }
 
 nav {
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 h1, .h1-article, h2, h3, h4, h5 {
@@ -46,7 +48,7 @@ a {
   color: #00B7FF;
 }
 
-footer {
+.footer-banner {
   margin-top: auto;
   background-color: #263057;
   color: white;
@@ -57,6 +59,13 @@ footer {
   margin-left: 0;
   margin-right: 0;
   font: 14px "Galano Grotesque", "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  min-width: 100%;
+  justify-content: flex-end;
+  margin-top: auto;
 }
 
 address {
