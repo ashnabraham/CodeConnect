@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Shaun",
+    "name": "shaun",
     "email": "shaun@test.com",
-    "salary": "500000",
+    "salary": "50000",
     "role": "Software Engineer",
     "employeeNumber": "EZ01"
   },
